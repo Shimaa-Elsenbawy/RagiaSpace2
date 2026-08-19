@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <link rel="stylesheet" href="assets/CSS/Blog.css">
+    <link rel="stylesheet" href="assets/CSS/main-style.css">
+</head>
+
+<body>
+        <div class="arrow">
+            <a href="#hero">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+
+    </div>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="./assets/images/Logo-e1708401673586.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Service</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="ourteam.html">Team</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item " href="gallery.html">Gallery</a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="membership.html">MemberShip</a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item active" href="Blog.html">Blog</a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="faq,html">Faq</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+
+                </ul>
+                <div class="social-icons">
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+   <section class="blog-hero" id="hero">
+        <div class="hero-content">
+            <h2 class="hero-subtitle">BLOG & NEWS</h2>
+            <hr class="orange-line">
+            <h1 class="hero-title">EXPLORE. <span class="highlight">DISCOVER.</span> ENGAGE.</h1>
+            <p class="description">Welcome to our space blog. Discover the secrets of the universe, from black holes to distant galaxies.</p>
+        </div>
+    </section>
+
+    <section class="main-container">
+        <div class="content-area">
+            <div class="section-heading">
+                <div class="insight-line">
+                <span class="insight-text">Insight</span>
+                <hr class="insight-long-line"></div>
+                <h2 class="sectiontitle">Latest <span class="highlight">News & Blog</span></h2><hr class="orange-line left">
+            </div>
+
+<div class="cards-list">
+    
+    <div class="horizontal-flip-card">
+        <div class="flip-card-inner">
+
+            <div class="flip-card-front">
+                <div class="card-img-container">
+                    <img src="assets/images/Black-Hole.jpg">
+                </div>
+                <div class="card-text-container">
+                    <h3>Secrets of Black Holes</h3>
+                    <p class="short-desc">Cosmic Phenomenon</p>
+                    <button class="details-btn">Details</button>
+                </div>
+            </div>
+            <div class="flip-card-back">
+                <div class="back-content">
+                    <h3>Overview</h3>
+                    <p>Black holes are regions of spacetime where gravity is so strong that nothing, not even light, can escape.</p>
+                    <button class="details-btn back-btn">Go Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="horizontal-flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <div class="card-img-container">
+                    <img src="assets/images/James.jpg">
+                </div>
+                <div class="card-text-container">
+                    <h3>James Webb Discoveries</h3>
+                    <p class="short-desc">Recent Discoveries</p>
+                    <button class="details-btn">Details</button>
+                </div>
+            </div>
+            <div class="flip-card-back">
+                <div class="back-content">
+                    <h3>Overview</h3>
+                    <p>The James Webb Space Telescope is the most powerful observatory, designed to see the universe's first stars.</p>
+                    <button class="details-btn back-btn">Go Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="horizontal-flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <div class="card-img-container">
+                    <img src="assets/images/Iss.jpg">
+                </div>
+                <div class="card-text-container">
+                    <h3>Life on the ISS</h3>
+                    <p class="short-desc">Manned Missions</p>
+                    <button class="details-btn">Details</button>
+                </div>
+            </div>
+            <div class="flip-card-back">
+                <div class="back-content">
+                    <h3>Overview</h3>
+                    <p>Astronauts experience weightlessness daily, requiring rigorous exercise to maintain their muscle mass.</p>
+                    <button class="details-btn back-btn">Go Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="horizontal-flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <div class="card-img-container">
+                    <img src="assets/images/Mars.jpg">
+                </div>
+                <div class="card-text-container">
+                    <h3>Mission to Mars</h3>
+                    <p class="short-desc">Planetary Exploration</p>
+                    <button class="details-btn">Details</button>
+                </div>
+            </div>
+            <div class="flip-card-back">
+                <div class="back-content">
+                    <h3>Overview</h3>
+                    <p>Mars is humanity's next frontier. Space agencies are developing technologies to enable sustainable life there.</p>
+                    <button class="details-btn back-btn">Go Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="framed-video-wrapper">
+    <div class="framed-video-box">
+        <img src=" assets/images/background-vid.jpg" class="video-inner-img">
+        <div class="play-icon-circle">
+            <i class="fa-solid fa-play"></i>
+        </div>
+    </div>
+    <p class="video-description">
+        This stunning fly-through animation takes you on a journey through the universe, starting from Earth and zooming out to the edge of the observable universe, putting cosmic scales into perspective.
+    </p>
+</div>
+<div id="videoModal" class="modal-overlay">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <iframe id="youtubeVideo" width="100%" height="450" src="https://www.youtube.com/embed/nGnX6GkrOgk?si=D9jdop-rA7JJlSTm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+</div>
+</div>
+        <div class="sidebar">
+            <div class="sidebar-widget">
+                <div class="search-box">
+                    <input type="text" id="searchinput" placeholder="Search...">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+<div class="sidebar-widget">
+    <h3 class="widget-title">Related Posts</h3>
+    <details class="simple-dropdown-post">
+        <summary class="post-summary">
+            <img src="assets/images/Black-Hole.jpg">
+            <div class="post-info">
+                <span class="date"><i class="fa-regular fa-calendar"></i> 15 Aug 2026</span>
+                <span class="title">Black Holes</span>
+            </div>
+        </summary>
+        <div class="post-hidden-content">
+            <p>Black holes are regions of spacetime where gravity is so strong that nothing, not even light, can escape.</p>
+        </div>
+    </details>
+    <details class="simple-dropdown-post">
+        <summary class="post-summary">
+            <img src="assets/images/James.jpg">
+            <div class="post-info">
+                <span class="date"><i class="fa-regular fa-calendar"></i> 10 Aug 2026</span>
+                <span class="title">James Webb</span>
+            </div>
+        </summary>
+        <div class="post-hidden-content">
+            <p>The James Webb Space Telescope is the most powerful observatory, designed to see the universe's first stars.</p>
+        </div>
+    </details>
+    <details class="simple-dropdown-post">
+        <summary class="post-summary">
+            <img src="assets/images/Iss.jpg" alt="Post 3">
+            <div class="post-info">
+                <span class="date"><i class="fa-regular fa-calendar"></i> 05 Aug 2026</span>
+                <span class="title">Space Station</span>
+            </div>
+        </summary>
+        <div class="post-hidden-content">
+            <p>Astronauts experience weightlessness daily, requiring rigorous exercise to maintain their muscle mass in space.</p>
+        </div>
+    </details>
+    <details class="simple-dropdown-post">
+        <summary class="post-summary">
+            <img src="assets/images/Mars.jpg">
+            <div class="post-info">
+                <span class="date"><i class="fa-regular fa-calendar"></i> 01 Aug 2026</span>
+                <span class="title">Planet Mars</span>
+            </div>
+        </summary>
+        <div class="post-hidden-content">
+            <p>Mars is humanity's next frontier. Space agencies are developing technologies to enable sustainable life there.</p>
+        </div>
+    </details>
+</div>
+  <div class="sidebar-widget">
+                <h3 class="widget-title">Category</h3>
+                <ul class="category-list">
+                    <li>Events</li>
+                    <li>News</li>
+                    <li>Discover</li>
+                    <li>Explore</li>
+                </ul>
+            </div>
+<div class="sidebar-widget">
+                <h3 class="widget-title">Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+        
+<section class="join-section">
+
+    <div class="join-moon"></div>
+
+    <div class="join-content">
+
+        <div class="join-label">
+            <span></span>
+            <p>Join Us</p>
+            <span></span>
+        </div>
+
+        <h3>INTERESTED ?</h3>
+
+        <h2>LET’S EXPLORE THE UNIVERSE</h2>
+
+        <p class="join-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+
+        <a href="about.html#Contact-form" class="join-btn">
+            Join Us
+        </a>
+
+    </div>
+
+</section>
+
+
+
+    
+    <!-- Footer -->
+
+    <footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-about footer-item">
+            <img src="assets/images/Logo-e1708401673586.png" alt="Raqia">
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Ut elit tellus, luctus nec
+                ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+
+            <div class="footer-social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+
+
+        <div class="footer-links footer-item">
+
+            <h3>Quick Link</h3>
+            <span class="footer-line"></span>
+
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Our Service</a>
+
+        </div>
+
+
+        <div class="footer-links footer-item">
+
+            <h3>Our Service</h3>
+            <span class="footer-line"></span>
+
+            <a href="#">Education</a>
+            <a href="#">Discussion</a>
+            <a href="#">Research</a>
+            <a href="#">Publishing</a>
+
+        </div>
+
+
+        <div class="footer-contact footer-item">
+
+            <h3>Get In Touch</h3>
+            <span class="footer-line"></span>
+
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <span>286 King Roman, New York</span>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <span>+62 812 3456 7891</span>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+                <span>raqia@example.com</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            Copyright © 2024 Raqia, All rights reserved.
+            Powered by Creed Creatives
+        </p>
+
+        <div>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms &amp; Service</a>
+        </div>
+
+    </div>
+
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>  
+  <script src="assets/JS/script.js"></script>
+ <script src="assets/JS/Blog.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+﻿/* الألوان الأساسية للثيم الفضائي */
+:root {
+    --bg-dark: #070714;
+    --card-bg: rgba(255, 255, 255, 0.03);
+    --primary-glow: #6a11cb;
+    --secondary-glow: #2575fc;
+    --text-main: #ffffff;
+    --text-muted: #a0a0a0;
+}
+
+body.astronomy-bg {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* إضافة خلفية متدرجة خفيفة لعمل تأثير الفضاء */
+    background-image: radial-gradient(circle at top right, rgba(37, 117, 252, 0.1), transparent 40%), radial-gradient(circle at bottom left, rgba(106, 17, 203, 0.1), transparent 40%);
+    min-height: 100vh;
+}
+
+/* تنسيق النصوص */
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+.text-light-50 {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* تأثير النص المنور (Glow) للـ Headings */
+.glow-text {
+    text-shadow: 0 0 15px rgba(37, 117, 252, 0.5);
+    font-weight: bold;
+}
+
+/* ستايل الكروت (Glassmorphism) */
+.service-card, .pricing-card {
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+    /* تأثير الـ Hover على كروت الخدمات */
+    .service-card:hover {
+        transform: translateY(-10px);
+        border-color: rgba(106, 17, 203, 0.5);
+        box-shadow: 0 10px 30px rgba(106, 17, 203, 0.2);
+    }
+
+    .service-card .icon-wrapper i {
+        color: var(--secondary-glow);
+        text-shadow: 0 0 15px rgba(37, 117, 252, 0.6);
+    }
+
+/* الكارت المميز في صفحة الاشتراكات */
+.featured-card {
+    background: linear-gradient(145deg, rgba(106, 17, 203, 0.1), rgba(37, 117, 252, 0.1));
+    border: 1px solid rgba(106, 17, 203, 0.5);
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(106, 17, 203, 0.15);
+}
+
+/* الزراير */
+.btn-outline-light {
+    border-color: rgba(255, 255, 255, 0.2);
+    color: var(--text-main);
+}
+
+    .btn-outline-light:hover {
+        background: rgba(255, 255, 255, 0.1);
+        color: #fff;
+        border-color: #fff;
+    }
+
+.btn-primary {
+    background: linear-gradient(45deg, var(--primary-glow), var(--secondary-glow));
+    border: none;
+}
+
+.glow-btn:hover {
+    box-shadow: 0 0 20px rgba(37, 117, 252, 0.5);
+    transform: scale(1.02);
+}
+
+/* تظبيط شكل الباقة المميزة على الموبايل */
+@media (max-width: 768px) {
+    .featured-card {
+        transform: scale(1);
+    }
+}
+
+/* ========================================= */
+/* الإضافات الخاصة بسكاشن صفحة العضوية الجديدة */
+/* ========================================= */
+
+/* تنسيقات الـ Hero Section */
+.membership-hero {
+    min-height: 50vh;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* تنسيقات الـ FAQ Accordion للدارك ثيم */
+.faq-dark {
+    background-color: var(--card-bg) !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    border-radius: 10px !important;
+}
+
+.faq-btn {
+    background-color: transparent !important;
+    color: var(--text-main) !important;
+    box-shadow: none !important;
+}
+
+    .faq-btn:not(.collapsed) {
+        color: var(--secondary-glow) !important;
+        background-color: rgba(37, 117, 252, 0.05) !important;
+    }
+
+    .faq-btn::after {
+        filter: invert(1);
+    }

@@ -1,0 +1,267 @@
+/* Premium Space Animation Layer */
+
+/* 1. Initial Page Fade-in */
+body {
+    animation: pageFadeIn 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes pageFadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* 2. Scroll Reveal Utility Classes */
+.reveal-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+    will-change: opacity, transform;
+}
+
+.reveal-up.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger delays for children inside a container */
+.reveal-stagger-1 { transition-delay: 0.1s; }
+.reveal-stagger-2 { transition-delay: 0.2s; }
+.reveal-stagger-3 { transition-delay: 0.3s; }
+.reveal-stagger-4 { transition-delay: 0.4s; }
+
+
+/* 3. Premium Card Hover (Elegant & Subtle) */
+.premium-hover {
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+    will-change: transform, box-shadow;
+    position: relative;
+    overflow: hidden;
+}
+
+.premium-hover::after {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 50%; height: 100%;
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,138,0,0.05) 50%, rgba(255,255,255,0) 100%);
+    transform: skewX(-20deg);
+    transition: all 0.7s ease;
+}
+
+.premium-hover:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 15px 40px rgba(255, 138, 0, 0.08), 0 0 20px rgba(255, 138, 0, 0.05);
+    border-color: rgba(255, 138, 0, 0.5) !important;
+}
+
+.premium-hover:hover::after {
+    left: 150%;
+}
+
+
+/* 4. Cosmic Button Hover */
+.btn-cosmic {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    z-index: 1;
+}
+
+.btn-cosmic::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(45deg, var(--primary), #ffa733, var(--primary));
+    background-size: 200% 200%;
+    z-index: -1;
+    transition: opacity 0.4s ease;
+    opacity: 0;
+}
+
+.btn-cosmic:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 138, 0, 0.2);
+    color: #000 !important;
+}
+
+.btn-cosmic:hover::before {
+    opacity: 1;
+    animation: cosmicGlow 3s linear infinite;
+}
+
+@keyframes cosmicGlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+/* 5. Dynamic Starfield Container */
+.cosmic-bg {
+    position: relative;
+    overflow: hidden;
+}
+
+.starfield-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1; /* Below content but above background */
+    opacity: 0.6;
+}
+
+/* Subtle Cosmic Glow (Radial gradient behind elements) */
+.glow-backdrop {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background: radial-gradient(circle, rgba(255, 138, 0, 0.05) 0%, rgba(0, 0, 0, 0) 70%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+
+/* 6. Orbital Rings Element (CSS Only) */
+.orbital-ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    border: 1px dashed rgba(255, 138, 0, 0.1);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+    animation: spinOrbit 60s linear infinite;
+}
+
+.orbital-ring::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--primary);
+}
+
+@keyframes spinOrbit {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+
+/* 7. Reduced Motion Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    body, .reveal-up, .premium-hover, .btn-cosmic, .orbital-ring {
+        animation: none !important;
+        transition: none !important;
+        transform: none !important;
+    }
+    .starfield-canvas {
+        display: none !important;
+    }
+}
+
+/* 8. Cinematic Slider Styles (Shared) */
+.bg-slider-section {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--bg);
+}
+
+.bg-slider {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.bg-slider figure {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    animation: bg-fade 24s linear infinite 0s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-slider figure::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 13, 36, 0.5);
+    z-index: 1;
+}
+
+.bg-slide-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: var(--white);
+    max-width: 800px;
+    padding: 0 20px;
+    opacity: 0;
+    animation: text-fade 24s linear infinite;
+}
+
+.bg-slide-text h2 {
+    font-size: clamp(30px, 5vw, 60px);
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 15px rgba(0,0,0,0.8);
+}
+
+.bg-slide-text p {
+    font-size: clamp(16px, 2vw, 24px);
+    color: var(--text-secondary);
+    text-shadow: 1px 1px 10px rgba(0,0,0,0.8);
+}
+
+.bg-slider figure:nth-child(1) { animation-delay: 0s; }
+.bg-slider figure:nth-child(2) { animation-delay: 6s; }
+.bg-slider figure:nth-child(3) { animation-delay: 12s; }
+.bg-slider figure:nth-child(4) { animation-delay: 18s; }
+
+.bg-slider figure:nth-child(1) .bg-slide-text { animation-delay: 0s; }
+.bg-slider figure:nth-child(2) .bg-slide-text { animation-delay: 6s; }
+.bg-slider figure:nth-child(3) .bg-slide-text { animation-delay: 12s; }
+.bg-slider figure:nth-child(4) .bg-slide-text { animation-delay: 18s; }
+
+@keyframes bg-fade {
+    0% { opacity: 0; transform: scale(1); }
+    10% { opacity: 1; transform: scale(1.02); }
+    25% { opacity: 1; transform: scale(1.05); }
+    35% { opacity: 0; transform: scale(1.07); }
+    100% { opacity: 0; transform: scale(1); }
+}
+
+@keyframes text-fade {
+    0% { opacity: 0; transform: translateY(20px); }
+    10% { opacity: 0; transform: translateY(20px); }
+    12% { opacity: 1; transform: translateY(0); }
+    23% { opacity: 1; transform: translateY(0); }
+    25% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 0; transform: translateY(-20px); }
+}
+
