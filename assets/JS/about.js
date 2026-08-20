@@ -7,15 +7,22 @@ document.getElementById('joinForm').addEventListener('submit', function(e) {
     const message = document.getElementById('userMessage').value.trim();
 
    
+    const nameRegex = /^[\p{L}\s]+$/u;
+    if (!name || !nameRegex.test(name)) {
+        alert('Please enter a valid name (letters only)!');
+        return;
+    }
+
+  
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
-        alert('الرجاء إدخال بريد إلكتروني صحيح!');
+        alert('Please enter a valid email address!');
         return;
     }
 
    
     if (!interest) {
-        alert('الرجاء اختيار اهتمامك من القائمة!');
+        alert('Please select your interest from the list!');
         return;
     }
 

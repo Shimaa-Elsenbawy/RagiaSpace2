@@ -1662,6 +1662,9 @@
     height:700px;
 }
 
+
+/* main image */
+
 .human-main-image{
     position:absolute;
     width:82%;
@@ -1671,7 +1674,7 @@
     z-index:1;
     overflow:hidden;
     opacity:0;
-    transform:translateY(100px) scale(.9);
+    transform:translateY(100px);
     transition:1.2s ease;
 }
 
@@ -1686,6 +1689,8 @@
     transform:translateY(0) scale(1);
 }
 
+
+/* second image  */
 
 .human-image{
     position:absolute;
@@ -1833,9 +1838,7 @@
 
 .team-title {
     opacity: 0;
-
     transform: translateY(70px);
-
     transition:
         opacity 1s ease,
         transform 1s ease;
@@ -2060,14 +2063,10 @@
 
 .team-member {
     position: absolute;
-
     width: 250px;
     height: 250px;
-
     z-index: 2;
-
     opacity: 0;
-
     transition:
         opacity .9s ease,
         transform 1s cubic-bezier(.2,.8,.2,1);
@@ -2086,7 +2085,6 @@
 
 .team-member-2 {
     left: 29%;
-
     top: 5px;
 
     transform: translateY(-70px);
@@ -2095,7 +2093,6 @@
 
 .team-member-3 {
     right: 29%;
-
     top: 5px;
 
     transform: translateY(-70px);
@@ -2498,7 +2495,6 @@
     background: #02020c;
     padding: 90px 4% 100px;
     overflow: hidden;
-
     opacity: 0;
     transform: translateY(70px);
     transition: 1s ease;
@@ -2690,6 +2686,82 @@
     font-size: 45px;
     font-family: Georgia, serif;
     line-height: 1;
+}
+
+/* media */
+
+@media (max-width: 991px) {
+
+    .testimonial-header {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .testimonial-title h2 {
+        font-size: 40px;
+    }
+
+    .testimonial-card {
+        flex: 0 0 calc(100% - 40px);  
+    }
+
+    .testimonial-track {
+        gap: 40px;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .testimonial-section {
+        padding: 60px 5% 70px;
+    }
+
+    .testimonial-label span {
+        width: 80px;
+    }
+
+    .testimonial-label h3 {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    .testimonial-title h2 {
+        font-size: 28px;
+        letter-spacing: 1px;
+    }
+
+    .testimonial-description {
+        font-size: 14px;
+    }
+
+    .testimonial-card {
+        padding: 0 15px;
+        flex: 0 0 100%;
+    }
+
+    .testimonial-card > p {
+        font-size: 15px;
+    }
+
+    .testimonial-person img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .testimonial-person h4 {
+        font-size: 18px;
+    }
+
+    .testimonial-person span {
+        font-size: 14px;
+    }
+
+    .quote {
+        width: 38px;
+        height: 38px;
+        font-size: 32px;
+    }
 }
 
 

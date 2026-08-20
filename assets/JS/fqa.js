@@ -100,27 +100,25 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// =========================
-// BACK TO TOP
-// =========================
+// Back to top
 
-const backToTop = document.getElementById("backToTop");
+// const backToTop = document.getElementById("backToTop");
 
-window.addEventListener("scroll", () => {
+// window.addEventListener("scroll", () => {
 
-    if (window.scrollY > 300) {
-        backToTop.classList.add("show");
-    } else {
-        backToTop.classList.remove("show");
-    }
+//     if (window.scrollY > 300) {
+//         backToTop.classList.add("show");
+//     } else {
+//         backToTop.classList.remove("show");
+//     }
 
-});
+// });
 
-backToTop.addEventListener("click", () => {
+// backToTop.addEventListener("click", () => {
 
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
+//     window.scrollTo({
+//         top: 0,
+//         behavior: "smooth"
+//     });
 
-});
+// });
