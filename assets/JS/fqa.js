@@ -45,9 +45,7 @@ questions.forEach(question => {
 });
 
 
-/* =========================
-   SCROLL ANIMATIONS
-========================= */
+
 
 document.addEventListener("DOMContentLoaded", () => {
 

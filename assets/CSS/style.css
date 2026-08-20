@@ -875,13 +875,11 @@
     bottom:15%;
 }
 
-/* =========================
-   TABLET
-========================= */
+
 
 @media (max-width: 991px) {
 
-    /* ===== HERO ===== */
+
 
     .hero,
     .hero-content {
@@ -927,7 +925,6 @@
     }
 
 
-    /* ===== ABOUT ===== */
 
     .about-section {
         height: auto;
@@ -990,7 +987,6 @@
     }
 
 
-    /* ===== STATS ===== */
 
     .stats-section {
         gap: 60px;
@@ -1015,7 +1011,6 @@
     }
 
 
-    /* ===== DISCOVER ===== */
 
     .discover-section {
         min-height: auto;
@@ -1055,14 +1050,11 @@
 }
 
 
-/* =========================
-   MOBILE
-========================= */
+
 
 @media (max-width: 767px) {
 
 
-    /* ===== HERO ===== */
 
     .hero {
         width: 100%;
@@ -1143,7 +1135,7 @@
     }
 
 
-    /* ===== ABOUT ===== */
+   
 
     .about-section {
         height: auto;
@@ -1236,7 +1228,7 @@
     }
 
 
-    /* ===== STATS ===== */
+
 
     .stats-section {
         gap: 30px;
@@ -1261,7 +1253,7 @@
     }
 
 
-    /* ===== DISCOVER ===== */
+
 
     .discover-section {
         padding: 70px 0 100px;
@@ -1361,13 +1353,11 @@
 }
 
 
-/* =========================
-   SMALL MOBILE
-========================= */
+
 
 @media (max-width: 480px) {
 
-    /* ===== HERO ===== */
+
 
     .bg-content {
         padding-top: 80px;
@@ -1419,7 +1409,7 @@
     }
 
 
-    /* ===== ABOUT ===== */
+
 
     .about-section {
         padding: 60px 0;
@@ -1452,7 +1442,7 @@
     }
 
 
-    /* ===== STATS ===== */
+
 
     .stats-section {
         gap: 25px;
@@ -1477,7 +1467,7 @@
     }
 
 
-    /* ===== DISCOVER ===== */
+
 
     .discover-title {
         font-size: 24px;
