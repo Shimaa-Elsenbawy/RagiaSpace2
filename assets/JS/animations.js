@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     if (prefersReducedMotion) {
@@ -7,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelectorAll('.reveal-up').forEach(el => el.classList.add('is-visible'));
         return;
     }
+
 
     const revealOptions = {
         root: null,
@@ -27,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll('.reveal-up').forEach(el => {
         revealObserver.observe(el);
     });
+
 
 
     const cosmicSections = document.querySelectorAll('.cosmic-bg');
@@ -79,13 +82,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 star.y -= star.vy * 0.005;
                 star.x -= star.vx * 0.005;
 
+
                 if (star.y < 0) star.y = height;
                 if (star.y > height) star.y = 0;
                 if (star.x < 0) star.x = width;
                 if (star.x > width) star.x = 0;
 
-                star.opacity += star.pulseSpeed * star.pulseDir;
 
+                star.opacity += star.pulseSpeed * star.pulseDir;
                 if (star.opacity <= 0.1) {
                     star.opacity = 0.1;
                     star.pulseDir = 1;
@@ -108,5 +112,32 @@ document.addEventListener("DOMContentLoaded", () => {
         resize();
         animate();
     });
+
+
+    const sliderItems = document.querySelectorAll('.slider-item');
+    if (sliderItems.length > 0) {
+        sliderItems.forEach(item => {
+            item.addEventListener('click', () => {
+
+                sliderItems.forEach(i => i.classList.remove('active'));
+
+                item.classList.add('active');
+            });
+
+
+            let startX;
+            item.addEventListener('touchstart', (e) => {
+                startX = e.touches[0].clientX;
+            }, { passive: true });
+
+            item.addEventListener('touchend', (e) => {
+                if (!startX) return;
+                let endX = e.changedTouches[0].clientX;
+                let diffX = startX - endX;
+
+
+            }, { passive: true });
+        });
+    }
 
 });

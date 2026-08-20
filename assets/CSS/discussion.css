@@ -1,0 +1,1100 @@
+/* =========================================================
+   DISCUSSION HERO
+========================================================= */
+
+.discussion-hero {
+
+    position: relative;
+
+    min-height: 85vh;
+
+    display: flex;
+
+    align-items: center;
+
+    background-image:
+        url("../images/discussion-night.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    overflow: hidden;
+
+}
+
+
+.discussion-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(2, 2, 12, .95),
+            rgba(2, 2, 12, .55)
+        );
+
+}
+
+
+.discussion-hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 850px;
+
+    opacity: 0;
+
+    transform: translateY(40px);
+
+    animation:
+        discussionHero 1s ease forwards;
+
+}
+
+
+@keyframes discussionHero {
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+.discussion-label {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    color: var(--primary);
+
+    font-size: 17px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.discussion-label span {
+
+    width: 80px;
+
+    height: 1px;
+
+    background: var(--primary);
+
+}
+
+
+.discussion-hero h1 {
+
+    color: var(--white-soft);
+
+    font-size: 60px;
+
+    line-height: 1.15;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.discussion-hero h1 span {
+
+    display: block;
+
+    color: var(--primary);
+
+}
+
+
+.discussion-hero p {
+
+    color: var(--text-secondary);
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    max-width: 700px;
+
+    margin-bottom: 35px;
+
+}
+
+
+.discussion-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 14px 25px;
+
+    background: var(--primary);
+
+    color: #080808;
+
+    text-decoration: none;
+
+    border-radius: 12px;
+
+    font-weight: 600;
+
+    transition: .35s;
+
+}
+
+
+.discussion-btn:hover {
+
+    color: #080808;
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 30px rgba(255,138,0,.25);
+
+}
+
+
+/* =========================================================
+   COMMUNITY INTRO
+========================================================= */
+
+.discussion-intro {
+
+    padding: 110px 0;
+
+    background: var(--bg);
+
+}
+
+
+.discussion-intro-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+}
+
+
+.discussion-intro-image {
+
+    height: 520px;
+
+    overflow: hidden;
+
+    border-radius: 80px 0 80px 0;
+
+}
+
+
+.discussion-intro-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: .6s;
+
+}
+
+
+.discussion-intro-image:hover img {
+
+    transform: scale(1.05);
+
+}
+
+
+.discussion-intro-content {
+
+    opacity: 0;
+
+    transform: translateX(50px);
+
+    transition: 1s ease;
+
+}
+
+
+.discussion-intro-content.in-view {
+
+    opacity: 1;
+
+    transform: translateX(0);
+
+}
+
+
+.discussion-intro-content h2 {
+
+    color: var(--white-soft);
+
+    font-size: 44px;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+
+}
+
+
+.discussion-intro-content h2 span {
+
+    display: block;
+
+    color: var(--primary);
+
+}
+
+
+.discussion-intro-content p {
+
+    color: var(--text-secondary);
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    margin-bottom: 17px;
+
+}
+
+
+.community-points {
+
+    margin-top: 30px;
+
+}
+
+
+.community-points div {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    margin-bottom: 16px;
+
+    color: var(--text-secondary);
+
+}
+
+
+.community-points i {
+
+    color: var(--primary);
+
+    font-size: 17px;
+
+}
+
+
+/* =========================================================
+   TOPICS
+========================================================= */
+
+.discussion-topics {
+
+    padding: 110px 0;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #0c1028 0%,
+            var(--bg) 70%
+        );
+
+}
+
+
+.topics-header {
+
+    max-width: 750px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+
+}
+
+
+.topics-header .section-label {
+
+    justify-content: center;
+
+}
+
+
+.topics-header h2 {
+
+    color: var(--white-soft);
+
+    font-size: 44px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.topics-header h2 span {
+
+    color: var(--primary);
+
+}
+
+
+.topics-header p {
+
+    color: var(--text-secondary);
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+}
+
+
+.topics-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.topic-card {
+
+    position: relative;
+
+    background: #0b0b16;
+
+    border: 1px solid rgba(255,255,255,.06);
+
+    border-radius: 14px;
+
+    padding: 35px 25px;
+
+    min-height: 310px;
+
+    transition: .35s;
+
+    overflow: hidden;
+
+}
+
+
+.topic-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 100px;
+
+    height: 100px;
+
+    border: 1px solid rgba(255,138,0,.08);
+
+    border-radius: 50%;
+
+    right: -40px;
+
+    top: -40px;
+
+}
+
+
+.topic-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color:
+        rgba(255,138,0,.45);
+
+    box-shadow:
+        0 18px 40px rgba(0,0,0,.4);
+
+}
+
+
+.topic-number {
+
+    position: absolute;
+
+    top: 18px;
+
+    right: 20px;
+
+    color: rgba(255,138,0,.35);
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.topic-icon {
+
+    width: 65px;
+
+    height: 65px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        rgba(255,138,0,.1);
+
+    color: var(--primary);
+
+    font-size: 23px;
+
+    margin-bottom: 22px;
+
+    transition: .35s;
+
+}
+
+
+.topic-card:hover .topic-icon {
+
+    background: var(--primary);
+
+    color: #050505;
+
+    transform: scale(1.1);
+
+}
+
+
+.topic-card h3 {
+
+    color: var(--white);
+
+    font-size: 20px;
+
+    margin-bottom: 14px;
+
+}
+
+
+.topic-card p {
+
+    color: var(--text-secondary);
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+
+}
+
+
+.topic-card a {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: var(--primary);
+
+    font-size: 13px;
+
+    text-decoration: none;
+
+}
+
+
+.topic-card a i {
+
+    transition: .3s;
+
+}
+
+
+.topic-card a:hover i {
+
+    transform: translateX(5px);
+
+}
+
+
+/* =========================================================
+   CONVERSATION
+========================================================= */
+
+.conversation-section {
+
+    padding: 110px 0;
+
+    background: #070711;
+
+}
+
+
+.conversation-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+}
+
+
+.conversation-content h2 {
+
+    color: var(--white-soft);
+
+    font-size: 43px;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+
+}
+
+
+.conversation-content h2 span {
+
+    display: block;
+
+    color: var(--primary);
+
+}
+
+
+.conversation-content > p {
+
+    color: var(--text-secondary);
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+
+}
+
+
+.conversation-steps {
+
+    margin-top: 30px;
+
+}
+
+
+.conversation-steps > div {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 18px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.conversation-steps > div > span {
+
+    color: var(--primary);
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+}
+
+
+.conversation-steps h3 {
+
+    color: var(--white);
+
+    font-size: 18px;
+
+    margin-bottom: 5px;
+
+}
+
+
+.conversation-steps p {
+
+    color: var(--text-secondary);
+
+    font-size: 13px;
+
+    margin: 0;
+
+}
+
+
+.conversation-image {
+
+    height: 550px;
+
+    overflow: hidden;
+
+    border-radius: 0 90px 0 0;
+
+}
+
+
+.conversation-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: .6s;
+
+}
+
+
+.conversation-image:hover img {
+
+    transform: scale(1.05);
+
+}
+
+
+/* =========================================================
+   COMMUNITY RULES
+========================================================= */
+
+.discussion-rules {
+
+    padding: 110px 0;
+
+    background: var(--bg);
+
+}
+
+
+.rules-header {
+
+    max-width: 750px;
+
+    text-align: center;
+
+    margin: 0 auto 55px;
+
+}
+
+
+.rules-header .section-label {
+
+    justify-content: center;
+
+}
+
+
+.rules-header h2 {
+
+    color: var(--white-soft);
+
+    font-size: 42px;
+
+    line-height: 1.2;
+
+    margin-bottom: 18px;
+
+}
+
+
+.rules-header h2 span {
+
+    color: var(--primary);
+
+}
+
+
+.rules-header p {
+
+    color: var(--text-secondary);
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+}
+
+
+.rules-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.rule-card {
+
+    padding: 35px 25px;
+
+    background: #0b0b16;
+
+    border: 1px solid rgba(255,255,255,.06);
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    transition: .35s;
+
+}
+
+
+.rule-card:hover {
+
+    transform: translateY(-7px);
+
+    border-color:
+        rgba(255,138,0,.4);
+
+}
+
+
+.rule-card i {
+
+    color: var(--primary);
+
+    font-size: 28px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.rule-card h3 {
+
+    color: var(--white);
+
+    font-size: 20px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.rule-card p {
+
+    color: var(--text-secondary);
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    margin: 0;
+
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.discussion-cta {
+
+    position: relative;
+
+    min-height: 480px;
+
+    display: flex;
+
+    align-items: center;
+
+    text-align: center;
+
+    background-image:
+        url("../images/gallery-images/stars3.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    overflow: hidden;
+
+}
+
+
+.discussion-cta-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        rgba(2,2,12,.83);
+
+}
+
+
+.discussion-cta-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 800px;
+
+    margin: auto;
+
+}
+
+
+.discussion-cta-content .section-label {
+
+    justify-content: center;
+
+}
+
+
+.discussion-cta-content h2 {
+
+    color: var(--white-soft);
+
+    font-size: 50px;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+
+}
+
+
+.discussion-cta-content h2 span {
+
+    color: var(--primary);
+
+}
+
+
+.discussion-cta-content p {
+
+    color: var(--text-secondary);
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* =========================================================
+   SCROLL ANIMATION
+========================================================= */
+
+.discussion-intro-content,
+.topic-card,
+.rule-card {
+
+    opacity: 0;
+
+    transform: translateY(40px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+
+}
+
+
+.discussion-intro-content.in-view,
+.topic-card.in-view,
+.rule-card.in-view {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .discussion-hero h1 {
+
+        font-size: 45px;
+
+    }
+
+
+    .discussion-intro-grid,
+    .conversation-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+    }
+
+
+    .topics-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .rules-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .conversation-image {
+
+        height: 450px;
+
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .discussion-hero {
+
+        min-height: 90vh;
+
+    }
+
+
+    .discussion-hero h1 {
+
+        font-size: 32px;
+
+    }
+
+
+    .discussion-hero p {
+
+        font-size: 14px;
+
+    }
+
+
+    .discussion-intro,
+    .discussion-topics,
+    .conversation-section,
+    .discussion-rules {
+
+        padding: 75px 0;
+
+    }
+
+
+    .discussion-intro-image {
+
+        height: 350px;
+
+    }
+
+
+    .discussion-intro-content h2,
+    .conversation-content h2 {
+
+        font-size: 32px;
+
+    }
+
+
+    .topics-header h2,
+    .rules-header h2 {
+
+        font-size: 32px;
+
+    }
+
+
+    .topics-grid,
+    .rules-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .conversation-image {
+
+        height: 350px;
+
+    }
+
+
+    .discussion-cta-content h2 {
+
+        font-size: 34px;
+
+    }
+
+}

@@ -60,7 +60,7 @@ function startCounter() {
                 number++;
                 counter.textContent = number;
 
-                setTimeout(count, 5);
+                setTimeout(count, 100);
 
             }
 
@@ -98,7 +98,6 @@ const humanSection = document.querySelector(".human-section");
 if(humanSection){
 
     const humanObserver = new IntersectionObserver((entries)=>{
-
         entries.forEach(entry=>{
 
             if(entry.isIntersecting){

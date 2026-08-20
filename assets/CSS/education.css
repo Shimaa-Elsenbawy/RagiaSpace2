@@ -1,0 +1,1091 @@
+/* =========================================================
+   EDUCATION HERO
+========================================================= */
+
+.education-hero {
+
+    position: relative;
+
+    min-height: 85vh;
+
+    display: flex;
+    align-items: center;
+
+    background-image:
+        url("../images/gallery-images/magic-space.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    overflow: hidden;
+
+}
+
+
+.education-hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(2, 2, 12, 0.95),
+            rgba(2, 2, 12, 0.55)
+        );
+
+}
+
+
+.education-hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 850px;
+
+    opacity: 0;
+
+    transform: translateY(40px);
+
+    animation:
+        educationHero 1s ease forwards;
+
+}
+
+
+@keyframes educationHero {
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+.education-label {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    color: var(--primary);
+
+    font-size: 17px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.education-label span {
+
+    width: 80px;
+
+    height: 1px;
+
+    background: var(--primary);
+
+}
+
+
+.education-hero h1 {
+
+    color: var(--white-soft);
+
+    font-size: 58px;
+
+    line-height: 1.15;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.education-hero h1 span {
+
+    display: block;
+
+    color: var(--primary);
+
+}
+
+
+.education-hero p {
+
+    color: var(--text-secondary);
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    max-width: 700px;
+
+    margin-bottom: 35px;
+
+}
+
+
+.education-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 14px 25px;
+
+    background: var(--primary);
+
+    color: #080808;
+
+    text-decoration: none;
+
+    border-radius: 12px;
+
+    font-weight: 600;
+
+    transition: .35s;
+
+}
+
+
+.education-btn:hover {
+
+    color: #080808;
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 30px rgba(255, 138, 0, .2);
+
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.education-intro {
+
+    padding: 110px 0;
+
+    background: var(--bg);
+
+}
+
+
+.education-intro-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+}
+
+
+.education-intro-image {
+
+    height: 500px;
+
+    overflow: hidden;
+
+    border-radius: 0 80px 0 80px;
+
+}
+
+
+.education-intro-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: .6s;
+
+}
+
+
+.education-intro-image:hover img {
+
+    transform: scale(1.05);
+
+}
+
+
+.education-intro-content {
+
+    opacity: 0;
+
+    transform: translateX(50px);
+
+    transition: 1s ease;
+
+}
+
+
+.education-intro-content.in-view {
+
+    opacity: 1;
+
+    transform: translateX(0);
+
+}
+
+
+.education-intro-content h2 {
+
+    color: var(--white-soft);
+
+    font-size: 42px;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+
+}
+
+
+.education-intro-content h2 span {
+
+    color: var(--primary);
+
+    display: block;
+
+}
+
+
+.education-intro-content > p {
+
+    color: var(--text-secondary);
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+
+}
+
+
+.education-points {
+
+    margin-top: 30px;
+
+}
+
+
+.education-points div {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 15px;
+
+    color: var(--text-secondary);
+
+}
+
+
+.education-points i {
+
+    color: var(--primary);
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================================
+   LEARNING PATH
+========================================================= */
+
+.learning-path {
+
+    padding: 110px 0;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #0b1027 0%,
+            var(--bg) 70%
+        );
+
+}
+
+
+.learning-header {
+
+    max-width: 750px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+
+}
+
+
+.learning-header .section-label {
+
+    justify-content: center;
+
+}
+
+
+.learning-header h2 {
+
+    color: var(--white-soft);
+
+    font-size: 44px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.learning-header h2 span {
+
+    color: var(--primary);
+
+}
+
+
+.learning-header p {
+
+    color: var(--text-secondary);
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+}
+
+
+.learning-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.learning-card {
+
+    position: relative;
+
+    padding: 35px 25px;
+
+    background: #0b0b16;
+
+    border: 1px solid rgba(255,255,255,.06);
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    transition: .35s;
+
+    overflow: hidden;
+
+}
+
+
+.learning-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: rgba(255,138,0,.4);
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.35);
+
+}
+
+
+.learning-number {
+
+    position: absolute;
+
+    top: 15px;
+
+    right: 18px;
+
+    color: rgba(255,138,0,.35);
+
+    font-size: 14px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.learning-icon {
+
+    width: 65px;
+
+    height: 65px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: rgba(255,138,0,.1);
+
+    color: var(--primary);
+
+    font-size: 23px;
+
+    transition: .35s;
+
+}
+
+
+.learning-card:hover .learning-icon {
+
+    background: var(--primary);
+
+    color: #050505;
+
+    transform: scale(1.1);
+
+}
+
+
+.learning-card h3 {
+
+    color: var(--white);
+
+    font-size: 19px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.learning-card p {
+
+    color: var(--text-secondary);
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    margin: 0;
+
+}
+
+
+/* =========================================================
+   OBSERVATION
+========================================================= */
+
+.observation-section {
+
+    padding: 110px 0;
+
+    background: #070711;
+
+}
+
+
+.observation-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+}
+
+
+.observation-content h2 {
+
+    color: var(--white-soft);
+
+    font-size: 43px;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+
+}
+
+
+.observation-content h2 span {
+
+    color: var(--primary);
+
+    display: block;
+
+}
+
+
+.observation-content > p {
+
+    color: var(--text-secondary);
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+}
+
+
+.observation-list {
+
+    margin-top: 35px;
+
+}
+
+
+.observation-list div {
+
+    display: flex;
+
+    gap: 20px;
+
+    align-items: flex-start;
+
+    margin-bottom: 20px;
+
+}
+
+
+.observation-list span {
+
+    color: var(--primary);
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+}
+
+
+.observation-list p {
+
+    color: var(--text-secondary);
+
+    font-size: 14px;
+
+    margin: 0;
+
+}
+
+
+.observation-images {
+
+    position: relative;
+
+    height: 520px;
+
+}
+
+
+.observation-main {
+
+    position: absolute;
+
+    right: 0;
+
+    top: 0;
+
+    width: 75%;
+
+    height: 75%;
+
+    overflow: hidden;
+
+    border-radius: 0 70px 0 0;
+
+}
+
+
+.observation-main img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+.observation-small {
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: 0;
+
+    width: 48%;
+
+    height: 48%;
+
+    overflow: hidden;
+
+    border: 7px solid #070711;
+
+    border-radius: 0 0 0 60px;
+
+}
+
+
+.observation-small img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+/* =========================================================
+   EDUCATION AREAS
+========================================================= */
+
+.education-areas {
+
+    padding: 110px 0;
+
+    background: var(--bg);
+
+}
+
+
+.areas-header {
+
+    text-align: center;
+
+    margin-bottom: 55px;
+
+}
+
+
+.areas-header .section-label {
+
+    justify-content: center;
+
+}
+
+
+.areas-header h2 {
+
+    color: var(--white-soft);
+
+    font-size: 42px;
+
+}
+
+
+.areas-header h2 span {
+
+    color: var(--primary);
+
+}
+
+
+.areas-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.area-card {
+
+    padding: 35px 25px;
+
+    text-align: center;
+
+    background: #0b0b16;
+
+    border: 1px solid rgba(255,255,255,.06);
+
+    border-radius: 12px;
+
+    transition: .35s;
+
+}
+
+
+.area-card:hover {
+
+    transform: translateY(-7px);
+
+    border-color: rgba(255,138,0,.4);
+
+}
+
+
+.area-card i {
+
+    color: var(--primary);
+
+    font-size: 28px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.area-card h3 {
+
+    color: var(--white);
+
+    font-size: 19px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.area-card p {
+
+    color: var(--text-secondary);
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    margin: 0;
+
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.education-cta {
+
+    position: relative;
+
+    min-height: 500px;
+
+    display: flex;
+
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        url("../images/gallery-images/stars3.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    overflow: hidden;
+
+}
+
+
+.education-cta-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        rgba(2,2,12,.82);
+
+}
+
+
+.education-cta-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 800px;
+
+    margin: auto;
+
+}
+
+
+.education-cta-content .section-label {
+
+    justify-content: center;
+
+}
+
+
+.education-cta-content h2 {
+
+    color: var(--white-soft);
+
+    font-size: 50px;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+
+}
+
+
+.education-cta-content h2 span {
+
+    color: var(--primary);
+
+}
+
+
+.education-cta-content p {
+
+    color: var(--text-secondary);
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+
+}
+
+
+.cta-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+}
+
+
+.education-outline-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 14px 25px;
+
+    border: 1px solid var(--primary);
+
+    border-radius: 12px;
+
+    color: var(--primary);
+
+    text-decoration: none;
+
+    transition: .35s;
+
+}
+
+
+.education-outline-btn:hover {
+
+    background: var(--primary);
+
+    color: #050505;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .education-hero h1 {
+
+        font-size: 45px;
+
+    }
+
+
+    .education-intro-grid,
+    .observation-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+    }
+
+
+    .learning-grid,
+    .areas-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .observation-images {
+
+        height: 450px;
+
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .education-hero {
+
+        min-height: 90vh;
+
+    }
+
+
+    .education-hero h1 {
+
+        font-size: 32px;
+
+    }
+
+
+    .education-hero p {
+
+        font-size: 14px;
+
+    }
+
+
+    .education-intro,
+    .learning-path,
+    .observation-section,
+    .education-areas {
+
+        padding: 75px 0;
+
+    }
+
+
+    .education-intro-image {
+
+        height: 350px;
+
+    }
+
+
+    .education-intro-content h2,
+    .observation-content h2 {
+
+        font-size: 32px;
+
+    }
+
+
+    .learning-header h2,
+    .areas-header h2 {
+
+        font-size: 32px;
+
+    }
+
+
+    .learning-grid,
+    .areas-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .observation-images {
+
+        height: 380px;
+
+    }
+
+
+    .education-cta-content h2 {
+
+        font-size: 34px;
+
+    }
+
+
+    .cta-buttons {
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+}
+
+
+.learning-card,
+.area-card {
+
+    opacity: 0;
+
+    transform: translateY(35px);
+
+    transition:
+        opacity .7s ease,
+        transform .7s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+
+}
+
+
+.learning-card.in-view,
+.area-card.in-view {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}

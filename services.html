@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="assets/CSS/style.css">
     <link rel="stylesheet" href="assets/CSS/main-style.css">
     <link rel="stylesheet" href="assets/CSS/services.css">
+    <link rel="stylesheet" href="assets/CSS/animations.css">
 </head>
 
 <body>
@@ -36,7 +37,7 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="index.html">About Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="services.html">Service</a>
@@ -54,7 +55,7 @@
                             </li>
 
                             <li>
-                                <a class="dropdown-item" href="#">MemberShip</a>
+                                <a class="dropdown-item" href="membership.html">MemberShip</a>
                             </li>
 
                             <li>
@@ -64,30 +65,22 @@
                                 <a class="dropdown-item" href="#">Blog details</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">Faq</a>
+                                <a class="dropdown-item" href="faq.html">Faq</a>
                             </li>
 
                         </ul>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="mailto:info@raqia.com">Contact Us</a>
                     </li>
 
                 </ul>
                 <div class="social-icons">
 
-                    <a href="#">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-
-                    <a href="#">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-
-                    <a href="#">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
+                    <a href="https://www.facebook.com/?utm_source"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/?utm_source"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
 
                 </div>
 
@@ -96,18 +89,12 @@
         </div>
     </nav>
 
-    <section class="services-hero">
-        <div class="container services-hero-content">
-            <div class="section-label" style="justify-content: center; margin-bottom: 20px;">
-                <span></span>
-                OUR SERVICE
-                <span></span>
-            </div>
-            <h1>IGNITING <span class="highlight">MINDS</span>, SHAPING <span class="highlight">FUTURES</span></h1>
-            <p>Empowering the next generation of space explorers and researchers through cutting-edge educational
-                resources, advanced astronomical tools, and global collaborative platforms.</p>
-        </div>
-    </section>
+   <section class="hero-bg-section">
+    <div class="hero-content">
+        <h2>EXPLORATION & DISCOVERY</h2>
+        <p>Journey into the unknown and unveil the secrets of the cosmos. See the universe with absolute clarity and reach for the stars through modern astrophysics.</p>
+    </div>
+</section>
 
 
     <section class="what-we-do">
@@ -123,46 +110,40 @@
                 <div class="orange-line" style="margin: 15px auto 50px;"></div>
             </div>
 
-            <div class="circle-layout">
-
-                <div class="circle-col left">
-                    <div class="circle-item-text">
+            <div class="electric-grid">
+                <!-- Card 1 -->
+                <div class="electric-card">
+                    <div class="electric-content">
+                        <img src="assets/images/e813b9469e72d7e2398b256875b97f4a.jpg" alt="Education">
                         <h3>Education</h3>
-                        <p>Comprehensive learning modules designed to build a strong foundation in astrophysics, orbital
-                            mechanics, and observational techniques for students of all levels.</p>
-                    </div>
-                    <div class="circle-item-text">
-                        <h3>Publishing</h3>
-                        <p>Disseminating groundbreaking cosmic research, peer-reviewed journals, and educational
-                            textbooks to enrich the global astronomical community's knowledge base.</p>
+                        <p>Comprehensive learning modules designed to build a strong foundation in astrophysics, orbital mechanics, and observational techniques for students of all levels.</p>
                     </div>
                 </div>
 
-
-                <div class="center-circle">
-                    <img src="assets/images/education.webp" alt="Education">
-                    <img src="assets/images/two-students.webp" alt="Discussion">
-                    <img src="assets/images/many-jobs.webp" alt="Publishing">
-                    <img src="assets/images/telescope-.webp" alt="Research">
-
-
-                    <div class="icon-badge icon-top-left"><i class="fa-solid fa-book-open"></i></div>
-                    <div class="icon-badge icon-top-right"><i class="fa-solid fa-users"></i></div>
-                    <div class="icon-badge icon-bottom-left"><i class="fa-solid fa-file-lines"></i></div>
-                    <div class="icon-badge icon-bottom-right"><i class="fa-solid fa-user-astronaut"></i></div>
-                </div>
-
-
-                <div class="circle-col right">
-                    <div class="circle-item-text">
+                <!-- Card 2 -->
+                <div class="electric-card">
+                    <div class="electric-content">
+                        <img src="assets/images/13b9cc24cc134affc2c80edb7715d7a5.jpg" alt="Discussion">
                         <h3>Discussion</h3>
-                        <p>Facilitating open dialogue and collaborative problem-solving among diverse groups of
-                            researchers, amateur astronomers, and academic professionals.</p>
+                        <p>Facilitating open dialogue and collaborative problem-solving among diverse groups of researchers, amateur astronomers, and academic professionals.</p>
                     </div>
-                    <div class="circle-item-text">
+                </div>
+
+                <!-- Card 3 -->
+                <div class="electric-card">
+                    <div class="electric-content">
+                        <img src="assets/images/305b3fb3907055854ca7c94a1233799e.jpg" alt="Publishing">
+                        <h3>Publishing</h3>
+                        <p>Disseminating groundbreaking cosmic research, peer-reviewed journals, and educational textbooks to enrich the global astronomical community's knowledge base.</p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="electric-card">
+                    <div class="electric-content">
+                        <img src="assets/images/6f5519909e5c5b0c05fb421e2b5af0b1.jpg" alt="Research">
                         <h3>Research</h3>
-                        <p>Supporting advanced observational projects, deep space telemetry analysis, and stellar
-                            cartography through shared resources and state-of-the-art observatory access.</p>
+                        <p>Supporting advanced observational projects, deep space telemetry analysis, and stellar cartography through shared resources and state-of-the-art observatory access.</p>
                     </div>
                 </div>
             </div>
@@ -170,84 +151,183 @@
     </section>
 
 
-    <section class="featured-research">
-        <div class="container fr-grid">
-            <div class="fr-content">
-                <div class="section-label">
-                    Featured Research
-                    <span></span>
-                </div>
-                <h2>Human Perspective Of The <span class="highlight">Universe</span></h2>
-                <div class="orange-line"></div>
-                <p>Explore how our understanding of the cosmos reshapes human philosophy and scientific boundaries.
-                    Through rigorous observation and theoretical modeling, we aim to bridge the gap between ancient
-                    sky-watching and modern astrophysics.</p>
-                <p>Our dedicated faculty and partnered institutions work continuously to decode stellar evolution,
-                    exoplanet atmospheres, and the mysteries of dark matter.</p>
-
-                <ul class="custom-list">
-                    <li><i class="fa-solid fa-circle-arrow-right"></i> Pioneering studies in cosmic microwave
-                        background.</li>
-                    <li><i class="fa-solid fa-circle-arrow-right"></i> Advanced optical spectroscopy of distant
-                        galaxies.</li>
-                    <li><i class="fa-solid fa-circle-arrow-right"></i> Collaborative international planetary defense
-                        tracking.</li>
-                </ul>
-
-                <a href="#" class="about-btn">Read More</a>
+<section class="featured-research">
+    <div class="container fr-centered">
+        <div class="fr-header">
+            <div class="section-label">
+                Featured Research
+                <span></span>
             </div>
-            <div class="fr-images">
-                <img src="assets/images/night-landscape-with-stars-covered-sky-and-comet-w-2023-11-27-05-01-54-utc_result-after_result-after_result-after_result-after-e1708582344532.webp"
-                    alt="Astrophotography" class="img-straight">
-                <img src="assets/images/smiling-college-professor-2023-11-27-05-10-25-utc_result-after_result-after_result-after-e1708582262393.webp"
-                    alt="Professor" class="img-tilted">
+            <h2>Human Perspective Of The <span class="highlight">Universe</span></h2>
+            <div class="orange-line"></div>
+        </div>
+
+        <div class="fr-images section-row">
+            <div class="section-col">
+                <div class="section-in">
+                    <img src="assets/images/c3ecea947eb57e80ba317d2b917d762c.jpg" alt="Astrophotography">
+                    <div class="hover-details">
+                        <h3>Astrophotography</h3>
+                        <p>Explore how our understanding of the cosmos reshapes human philosophy and scientific boundaries.</p>
+                        <ul class="custom-list">
+                            <li><i class="fa-solid fa-circle-arrow-right"></i> Cosmic microwave background.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-col">
+                <div class="section-in">
+                    <img src="assets/images/b55e059414125a8a6b1cba0d435a4b81.jpg" alt="Professor">
+                    <div class="hover-details">
+                        <h3>Research Faculty</h3>
+                        <p>Our dedicated faculty works continuously to decode stellar evolution and dark matter.</p>
+                        <ul class="custom-list">
+                            <li><i class="fa-solid fa-circle-arrow-right"></i> Optical spectroscopy.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-col">
+                <div class="section-in">
+                    <img src="assets/images/099d9128a31aa067de4c749fec6ad8be.jpg" alt="Star Trails">
+                    <div class="hover-details">
+                        <h3>Stellar Evolution</h3>
+                        <p>Through rigorous observation and theoretical modeling, we bridge ancient sky-watching and modern astrophysics.</p>
+                        <ul class="custom-list">
+                            <li><i class="fa-solid fa-circle-arrow-right"></i> Planetary defense tracking.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-col">
+                <div class="section-in">
+                    <img src="assets/images/305b3fb3907055854ca7c94a1233799e.jpg" alt="Telescope">
+                    <div class="hover-details">
+                        <h3>Deep Space Observatories</h3>
+                        <p>Advanced imaging and data analysis to decode exoplanet atmospheres and distant galaxies.</p>
+                        <ul class="custom-list">
+                            <li><i class="fa-solid fa-circle-arrow-right"></i> Advanced optical data.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-
-    <section class="learn-astronomy">
-        <div class="container la-grid">
-            <div class="masonry-grid">
-                <img src="assets/images/milky-way-dark-sky-and-starry-loop-milky-way-nigh-2023-11-27-04-56-41-utc_result-after_result-after_result-after-e1708582327866.webp"
-                    alt="Star Trails" class="mg-1">
-                <img src="assets/images/milky-way-galaxy-beautiful-stars-at-night-2023-11-27-05-22-35-utc_result-after_result-after-1024x683.webp"
-                    alt="Desert Milky Way" class="mg-2">
-                <img src="assets/images/night-sky-with-stars-and-clouds-in-motion-2023-11-27-05-32-25-utc_result-after_result-after_result-after-e1708582368297.webp"
-                    alt="Vertical Milky Way" class="mg-3">
-                <img src="assets/images/professional-photo-shoot-of-milky-way-in-mountains-2023-11-27-05-32-32-utc_result-after_result-after-1024x754.webp"
-                    alt="Telescope" class="mg-4">
+<section class="learn-astronomy">
+    <div class="container la-wrapper">
+        <div class="la-content">
+            <div class="section-label">
+                Learn Astronomy
+                <span></span>
             </div>
+            <h2>Unlock The <span class="highlight">Mysteries</span> Of The Cosmos Through <span class="highlight">Knowledge</span></h2>
+            <div class="orange-line"></div>
+            <p>Whether you are setting up your first backyard telescope or diving into complex astrophysical data sets, our educational programs are tailored to ignite your curiosity and enhance your technical skills.</p>
+        </div>
 
-            <div class="la-content">
-                <div class="section-label">
-                    Learn Astronomy
-                    <span></span>
+        <div class="tilted-carousel-container">
+            <div class="tilted-carousel-track">
+                
+                <div class="carousel-card">
+                    <div class="card-img">
+                        <img src="assets/images/099d9128a31aa067de4c749fec6ad8be.jpg" alt="Star Trails">
+                    </div>
+                    <div class="card-info">
+                        <h3>Star Trails Observation</h3>
+                        <p>Interactive virtual observatory sessions to master night sky photography.</p>
+                    </div>
                 </div>
-                <h2>Unlock The <span class="highlight">Mysteries</span> Of The Cosmos Through <span
-                        class="highlight">Knowledge</span></h2>
-                <div class="orange-line"></div>
-                <p>Whether you are setting up your first backyard telescope or diving into complex astrophysical data
-                    sets, our educational programs are tailored to ignite your curiosity and enhance your technical
-                    skills.</p>
-                <p>Join a vibrant community of learners who share a passion for the stars. We provide the tools,
-                    guidance, and community support needed to transform a casual interest into a profound understanding
-                    of the universe.</p>
 
-                <ul class="custom-list">
-                    <li><i class="fa-solid fa-circle-arrow-right"></i> Interactive virtual observatory sessions.</li>
-                    <li><i class="fa-solid fa-circle-arrow-right"></i> Comprehensive guides on astrophotography
-                        techniques.</li>
-                    <li><i class="fa-solid fa-circle-arrow-right"></i> Certification courses in introductory
-                        astrophysics.</li>
-                </ul>
+                <div class="carousel-card">
+                    <div class="card-img">
+                        <img src="assets/images/b55e059414125a8a6b1cba0d435a4b81.jpg" alt="Desert Milky Way">
+                    </div>
+                    <div class="card-info">
+                        <h3>Desert Milky Way</h3>
+                        <p>Comprehensive guides on astrophotography techniques in remote locations.</p>
+                    </div>
+                </div>
 
-                <a href="#" class="about-btn">Read More</a>
+                <div class="carousel-card">
+                    <div class="card-img">
+                        <img src="assets/images/nebula_deep_space.jpg" alt="Deep Space Nebula">
+                    </div>
+                    <div class="card-info">
+                        <h3>Deep Space Astrophysics</h3>
+                        <p>Certification courses in introductory astrophysics and spectral analysis.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-card">
+                    <div class="card-img">
+                        <img src="assets/images/305b3fb3907055854ca7c94a1233799e.jpg" alt="Telescope Setup">
+                    </div>
+                    <div class="card-info">
+                        <h3>Telescope Equipment</h3>
+                        <p>Learn practical setup, alignment, and optical maintenance techniques.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-card">
+                    <div class="card-img">
+                        <img src="assets/images/c3ecea947eb57e80ba317d2b917d762c.jpg" alt="Astrophotography">
+                    </div>
+                    <div class="card-info">
+                        <h3>Stellar Imaging</h3>
+                        <p>Advanced imaging and process techniques for deep space objects.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-card">
+                    <div class="card-img">
+                        <img src="assets/images/6c1b1ac0ee589b36a9944f2e9863ebf4.jpg" alt="Cosmic Exploration">
+                    </div>
+                    <div class="card-info">
+                        <h3>Cosmic Exploration</h3>
+                        <p>Theoretical modeling and observations bridging sky-watching with modern astrophysics.</p>
+                    </div>
+                </div>
+
+                <!-- تكرار الكروت للسماح بحركة السلايدر المستمرة بدون انقطاع -->
+                <div class="carousel-card">
+                    <div class="card-img">
+                        <img src="assets/images/099d9128a31aa067de4c749fec6ad8be.jpg" alt="Star Trails">
+                    </div>
+                    <div class="card-info">
+                        <h3>Star Trails Observation</h3>
+                        <p>Interactive virtual observatory sessions to master night sky photography.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-card">
+                    <div class="card-img">
+                        <img src="assets/images/b55e059414125a8a6b1cba0d435a4b81.jpg" alt="Desert Milky Way">
+                    </div>
+                    <div class="card-info">
+                        <h3>Desert Milky Way</h3>
+                        <p>Comprehensive guides on astrophotography techniques in remote locations.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-card">
+                    <div class="card-img">
+                        <img src="assets/images/nebula_deep_space.jpg" alt="Deep Space Nebula">
+                    </div>
+                    <div class="card-info">
+                        <h3>Deep Space Astrophysics</h3>
+                        <p>Certification courses in introductory astrophysics and spectral analysis.</p>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </section>
-
-
+    </div>
+</section>
     <section class="cta-section">
         <div class="cta-moon-bg"></div>
         <div class="container cta-content">
@@ -261,11 +341,149 @@
             <p>Become a part of our global network of space enthusiasts and researchers. Gain exclusive access to
                 premium educational resources, cutting-edge tools, and a community driven by the spirit of discovery.
             </p>
-            <a href="#" class="start-btn" style="border-radius: 14px; text-decoration: none;">Join Us</a>
+            <a href="membership.html" class="start-btn" style="border-radius: 14px; text-decoration: none;">Join Us</a>
         </div>
     </section>
 
+
+
+      <!-- join us section -->
+
+    <section class="join-section">
+
+        <div class="join-moon"></div>
+
+        <div class="join-content">
+
+            <div class="join-label">
+                <span></span>
+                <p>Join Us</p>
+                <span></span>
+            </div>
+
+            <h3>INTERESTED ?</h3>
+
+            <h2>LET’S EXPLORE THE UNIVERSE</h2>
+
+            <p class="join-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+
+            <a href="about.html#Contact-form" class="join-btn">
+                Join Us
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-about footer-item">
+                <img src="assets/images/Logo-e1708401673586.png" alt="Raqia">
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Ut elit tellus, luctus nec
+                    ullamcorper mattis, pulvinar dapibus leo.
+                </p>
+
+                <div class="footer-social">
+                     <a href="https://www.facebook.com/?utm_source"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/?utm_source"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+
+            <div class="footer-links footer-item">
+
+                <h3>Quick Link</h3>
+                <span class="footer-line"></span>
+
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="services.html">Our Service</a>
+
+            </div>
+
+
+            <div class="footer-links footer-item">
+
+                <h3>Our Service</h3>
+                <span class="footer-line"></span>
+
+
+                <!-- remember this -->
+
+                <a href="#">Education</a>
+                <a href="#">Discussion</a>
+                <a href="#">Research</a>
+                <a href="#">Publishing</a>
+
+            </div>
+
+
+            <div class="footer-contact footer-item">
+
+                <h3>Get In Touch</h3>
+                <span class="footer-line"></span>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <span>286 King Roman, New York</span>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <span>+62 812 3456 7891</span>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <span>raqia@example.com</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                Copyright © 2024 Raqia, All rights reserved.
+                Powered by Creed Creatives
+            </p>
+
+            <div>
+
+                <!-- remember this  -->
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms &amp; Service</a>
+            </div>
+
+        </div>
+
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/JS/script (1).js"></script>
+    <script src="./assets/JS/animations.js"></script>
     <script src="./assets/JS/script.js"></script>
 
 </body>

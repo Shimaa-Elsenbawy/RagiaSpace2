@@ -3,7 +3,7 @@
     if (contactForm) {
 
         const phonePattern = /^[0-9]{11,}$/; 
-        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{3,6}$/;
         const namePattern = /^[a-zA-Z\u0621-\u064A]{3,}$/;
         const subjectPattern = /^[a-zA-Z\u0621-\u064A\s]{3,}$/; 
 
