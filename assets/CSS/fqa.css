@@ -645,6 +645,7 @@
 
     align-items: center;
 
+
     gap: 12px;
 
     padding: 14px 25px;
@@ -719,6 +720,8 @@
 }
 
 
+
+
 .faq-contact-card {
 
     padding: 25px 15px;
@@ -747,6 +750,9 @@
     transition-delay: 0.4s;
 }
 
+
+
+/* the whole card moves alittle up */
 
 .faq-contact-card:hover {
 
@@ -790,6 +796,7 @@
 
     transform: scale(1.08);
 }
+
 
 
 .faq-contact-card h3 {

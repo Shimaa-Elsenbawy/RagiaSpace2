@@ -11,7 +11,6 @@ questions.forEach(question => {
         if (item.classList.contains("active")) {
 
             item.classList.remove("active");
-
             icon.classList.remove("fa-chevron-up");
             icon.classList.add("fa-chevron-down");
 
@@ -19,6 +18,8 @@ questions.forEach(question => {
 
         // Open the clicked question
         else {
+
+            // initial state
 
             // Close all questions first
             document.querySelectorAll(".faq-item").forEach(el => {

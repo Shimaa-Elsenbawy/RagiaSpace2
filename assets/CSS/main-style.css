@@ -284,9 +284,7 @@ a{
 
 
 
-/* =========================
-   FOOTER
-========================= */
+/* footer */
 
 .footer {
     background: #02020c;
@@ -840,6 +838,7 @@ a{
     transition: 0.3s;
     backdrop-filter: blur(8px);
 }
+
 
 
 
